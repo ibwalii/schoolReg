@@ -1,0 +1,150 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Site Properties -->
+    <title>Student Portal</title>
+
+    <!-- Stylesheets -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="student/css/custom.css" rel="stylesheet" id="bootstrap-css">
+    <style>
+        body{
+            background: url("student/img/bglogin.jpg");
+             /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .header{
+            background: #000;
+            color: aliceblue;
+            height: 70px;
+            align-content: center;
+            padding: 40px;
+        }
+        .guidelines .hd{
+            text-align: center;
+            text-decoration: underline;
+        }
+        .guidelines{
+            padding-top: 40px;
+            color: aliceblue;
+        }
+        ul {
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -150px;
+}
+
+li {
+  position: relative;
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-animation: fadeIn 0.5s linear;
+          animation: fadeIn 0.5s linear;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+li:nth-child(1) {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+li:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+li:nth-child(3) {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+li:nth-child(4) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+li:nth-child(5) {
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    top: 100px;
+  }
+  75% {
+    opacity: 0.5;
+    top: 0px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="container-fluid text-center header">
+        <h3>Mai-Idris Aloma Polytechnic</h3>
+    </div>
+        <div class="row">
+        <div class="col-md-4 offset-2">
+            <div class="guidelines">
+                <h3 class="hd">Registration Guidelines</h3>
+                <ul>
+                        <li>Scratch your card gently</li>
+                        <li>Enter your Registration Number</li>
+                        <li>Enter your Scratch card Pin</li>
+                        <li>Click activate</li>
+                        
+                      </ul>
+            </div>
+        </div>
+        <div class="col-md-5">
+                <div class="box">
+                        <div id="header">
+                          <div id="cont-lock"><i class="material-icons lock">STUDENT PORTAL</i></div>
+                          <div id="bottom-head"><h1 id="logintoregister">Activate your PIN</h1></div>
+                        </div> 
+                         <form action="student/registration.html" method="post">
+                          <div class="group">      
+                            <input class="inputMaterial" type="text" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Registration Number</label>
+                          </div>
+                              <div class="group">      
+                            <input class="inputMaterial" type="password" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Pin Number</label>
+                          </div>
+                          <button id="buttonlogintoregister" type="submit">Activate</button>
+                        </form>
+                        <div id="footer-box"><p class="footer-text">Continue Registraion?<span class="sign-up"> <a href="studentlogin.html">Click here</a></span></p></div>
+                      </div>
+        </div>
+        
+    </div>        
+</body>
+</html>
